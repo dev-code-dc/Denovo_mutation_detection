@@ -44,10 +44,16 @@ Prepare an Excel file or table with the following columns:
 This process can be run on an HPC system using simple commands.
 
 ### Command Example:
+first you should get the the slivar files also in your directory, to get those:
+```bash
+wget https://github.com/brentp/slivar/releases/download/v0.2.8/slivar
+
+```
 
 ```bash
 ./submit_script.sh -ns node55,node56,node57 -pt cbr_q_t -pj 4 -vcf_list SNVs_list.txt -ped_xl Trio_List.xlsx
-
+chmod +x ./slivar
+wget https://raw.githubusercontent.com/brentp/slivar/master/js/slivar-functions.js
 ```
 ### Explanation of Command Options:
 
