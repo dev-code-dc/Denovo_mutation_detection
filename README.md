@@ -51,7 +51,8 @@ chmod +x ./slivar
 wget https://raw.githubusercontent.com/brentp/slivar/master/js/slivar-functions.js
 ```
 
-make sure you have all the required files and scripts in your directory:
+make sure you have all the required files and scripts in your directory.
+then :
 
 ```
 chmod a+x *.sh
