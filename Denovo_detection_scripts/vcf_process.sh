@@ -47,24 +47,24 @@ process_vcf() {
     slivar_ped=${formatted_output}
 
 
-#        /gpfs/data/user/debdutta/Slivar/4_samples/test_v1/./slivar expr --pass-only --vcf "${conv_vcf}" --ped "${slivar_ped}" --js /gpfs/data/user/debdutta/Slivar/4_samples/test_v1/slivar-functions.js --out-vcf "without_AF_filter_${slivar_output}" --info "variant.FILTER == 'PASS' && variant.call_rate > 0.90" --trio "example_denovo:denovo(kid, dad, mom) && kid.het && mom.hom_ref && dad.hom_ref && (mom.AD[1] + dad.AD[1]) == 0 && kid.GQ >= 20 && mom.GQ >= 20 && dad.GQ >= 20 && kid.DP >= 10 && mom.DP >= 10 && dad.DP >= 10"
+#        ./slivar expr --pass-only --vcf "${conv_vcf}" --ped "${slivar_ped}" --js slivar-functions.js --out-vcf "without_AF_filter_${slivar_output}" --info "variant.FILTER == 'PASS' && variant.call_rate > 0.90" --trio "example_denovo:denovo(kid, dad, mom) && kid.het && mom.hom_ref && dad.hom_ref && (mom.AD[1] + dad.AD[1]) == 0 && kid.GQ >= 20 && mom.GQ >= 20 && dad.GQ >= 20 && kid.DP >= 10 && mom.DP >= 10 && dad.DP >= 10"
 
-#        /gpfs/data/user/debdutta/Slivar/4_samples/test_v1/./slivar expr --pass-only -g /gpfs/data/user/debdutta/Slivar/4_samples/test_v1/gnomad.hg38.genomes.v3.fix.zip --vcf "${conv_vcf}" --ped "${slivar_ped}" --js /gpfs/data/user/debdutta/Slivar/4_samples/test_v1/slivar-functions.js --out-vcf "filtered_AF_${slivar_output}" --info "INFO.gnomad_popmax_af < 0.05 && variant.FILTER == 'PASS' && variant.call_rate > 0.90" --trio "example_denovo:denovo(kid, dad, mom) && kid.het && mom.hom_ref && dad.hom_ref && (mom.AD[1] + dad.AD[1]) == 0 && kid.GQ >= 20 && mom.GQ >= 20 && dad.GQ >= 20 && kid.DP >= 10 && mom.DP >= 10 && dad.DP >= 10"
-
-
-/gpfs/data/user/debdutta/Slivar/4_samples/test_v1/./slivar expr --pass-only -g /gpfs/data/user/debdutta/Slivar/4_samples/test_v1/gnomad.hg38.genomes.v3.fix.zip --vcf "${conv_vcf}" --ped "${slivar_ped}" --js /gpfs/data/user/debdutta/Slivar/4_samples/test_v1/slivar-functions.js --out-vcf "filtered_AF_${slivar_output}" --info "INFO.gnomad_popmax_af < 0.05 && variant.FILTER == 'PASS' && variant.call_rate > 0.90" --trio "homalt_denovo:kid.hom_alt | kid.het && mom.hom_ref && dad.hom_ref && (mom.AD[1] + dad.AD[1]) == 0 && kid.GQ >= 20 && mom.GQ >= 20 && dad.GQ >= 20 && kid.DP >= 10 && mom.DP >= 10 && dad.DP >= 10"
-
-/gpfs/data/user/debdutta/Slivar/4_samples/test_v1/./slivar expr --pass-only --vcf "${conv_vcf}" --ped "${slivar_ped}" --js /gpfs/data/user/debdutta/Slivar/4_samples/test_v1/slivar-functions.js --out-vcf "without_AF_filter_${slivar_output}" --info "INFO.gnomad_popmax_af < 0.05 && variant.FILTER == 'PASS' && variant.call_rate > 0.90" --trio "homalt_denovo:kid.hom_alt | kid.het && mom.hom_ref && dad.hom_ref && (mom.AD[1] + dad.AD[1]) == 0 && kid.GQ >= 20 && mom.GQ >= 20 && dad.GQ >= 20 && kid.DP >= 10 && mom.DP >= 10 && dad.DP >= 10"
+#        ./slivar expr --pass-only -g gnomad.hg38.genomes.v3.fix.zip --vcf "${conv_vcf}" --ped "${slivar_ped}" --js slivar-functions.js --out-vcf "filtered_AF_${slivar_output}" --info "INFO.gnomad_popmax_af < 0.05 && variant.FILTER == 'PASS' && variant.call_rate > 0.90" --trio "example_denovo:denovo(kid, dad, mom) && kid.het && mom.hom_ref && dad.hom_ref && (mom.AD[1] + dad.AD[1]) == 0 && kid.GQ >= 20 && mom.GQ >= 20 && dad.GQ >= 20 && kid.DP >= 10 && mom.DP >= 10 && dad.DP >= 10"
 
 
+#./slivar expr --pass-only -g gnomad.hg38.genomes.v3.fix.zip --vcf "${conv_vcf}" --ped "${slivar_ped}" --js slivar-functions.js --out-vcf "filtered_AF_${slivar_output}" --info "INFO.gnomad_popmax_af < 0.05 && variant.FILTER == 'PASS' && variant.call_rate > 0.90" --trio "homalt_denovo:kid.hom_alt | kid.het && mom.hom_ref && dad.hom_ref && (mom.AD[1] + dad.AD[1]) == 0 && kid.GQ >= 20 && mom.GQ >= 20 && dad.GQ >= 20 && kid.DP >= 10 && mom.DP >= 10 && dad.DP >= 10"
+
+./slivar expr --pass-only --vcf "${conv_vcf}" --ped "${slivar_ped}" --js slivar-functions.js --out-vcf "without_AF_filter_${slivar_output}" --info "INFO.gnomad_popmax_af < 0.05 && variant.FILTER == 'PASS' && variant.call_rate > 0.90" --trio "homalt_denovo:kid.hom_alt | kid.het && mom.hom_ref && dad.hom_ref && (mom.AD[1] + dad.AD[1]) == 0 && kid.GQ >= 20 && mom.GQ >= 20 && dad.GQ >= 20 && kid.DP >= 10 && mom.DP >= 10 && dad.DP >= 10"
 
 
 
-    /gpfs/data/user/debdutta/Slivar/4_samples/test_v1/./slivar tsv -p "${slivar_ped}" -s example_denovo "filtered_AF_${slivar_output}" > "summary_filtered_244_sample_chr${chromosome}_denov_1.tsv"
 
-cat "summary_filtered_244_sample_chr${chromosome}_denov_1.tsv" | tr '\t' '$'| sed 's/\$\$\$/\$/g' | tr '$' '\t' > "summary_filtered_244_sample_chr${chromosome}_denov.tsv"
 
-/gpfs/data/user/debdutta/Slivar/4_samples/test_v1/./slivar tsv -p "${slivar_ped}" -s example_denovo "without_AF_filter_${slivar_output}" > "summary_without_filter_244_sample_chr${chromosome}_denov_1.tsv"
+ #   ./slivar tsv -p "${slivar_ped}" -s example_denovo "filtered_AF_${slivar_output}" > "summary_filtered_244_sample_chr${chromosome}_denov_1.tsv"
+
+#cat "summary_filtered_244_sample_chr${chromosome}_denov_1.tsv" | tr '\t' '$'| sed 's/\$\$\$/\$/g' | tr '$' '\t' > "summary_filtered_244_sample_chr${chromosome}_denov.tsv"
+
+./slivar tsv -p "${slivar_ped}" -s example_denovo "without_AF_filter_${slivar_output}" > "summary_without_filter_244_sample_chr${chromosome}_denov_1.tsv"
 
 cat "summary_without_filter_244_sample_chr${chromosome}_denov_1.tsv" | tr '\t' '$'| sed 's/\$\$\$/\$/g' | tr '$' '\t' > "summary_without_filter_244_sample_chr${chromosome}_denov.tsv"
     rm "${conv_vcf}"
