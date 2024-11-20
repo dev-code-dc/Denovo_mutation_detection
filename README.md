@@ -17,4 +17,6 @@ you need to have, vcf files with required columns like, GQ, AD, DP QUALITY, FILT
    **Note**: Ensure `IID`, `PID`, and `MID` match the sample IDs in your VCF files.
 
 *this process can be run on HPC, with just easy commands:
-Commands:
+- Commands:
+
+![image](https://github.com/user-attachments/assets/9b3edbc1-3989-4364-b0a6-4a40f85c8ec5)
