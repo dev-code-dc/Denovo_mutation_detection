@@ -64,7 +64,7 @@ alright!! you can then execute the command, example:
 
 
 ```bash
-./submit_script.sh -ns node55,node56,node57 -pt cbr_q_t -pj 4 -vcf_list SNVs_list.txt -ped_xl Trio_List.xlsx
+./submit_script.sh -ns node55,node56,node57 -pt partition_q_t -pj 4 -vcf_list SNVs_list.txt -ped_xl Trio_List.xlsx
 
 ```
 ### Explanation of Command Options:
