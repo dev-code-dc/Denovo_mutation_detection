@@ -1,6 +1,8 @@
 # De Novo Mutation Detection  
 
 This guide provides an easy way to detect de novo mutations using scripts. De novo mutations are variants that are absent in both parents but present in the proband (child).
+## outline
+![image](https://github.com/user-attachments/assets/1ef31795-8403-435c-bc12-b895c1dbd387)
 
 ## Prerequisites
 - **scripts** take all the scripts in a directory:
