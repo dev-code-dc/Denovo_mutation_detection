@@ -2,14 +2,19 @@
 you can detect denovo mutation in easy way with the scripts.
 variants that are not present in either of your parents, but does exist in the proband(child)
 you need to have, vcf files with required columns like, GQ, AD, DP QUALITY, FILTER, GT, CHR, POS, REF, ALT etc.
-- you need to have one excel file with samples details as follows:
-- IID	PID	MID	IID Gender
-- SS1	SS2	SS3	.
-- SB1	SB2	SB3	.
-- IID: Proband or child sample ID where de novo mutations are to be detected.  
-- PID: Father’s sample ID.  
-- MID: Mother’s sample ID.  
+2. **Sample Details File**:  
+   Create an Excel file or table with these columns:
 
-**Note**: Ensure `IID`, `PID`, and `MID` match the sample IDs in your VCF files.
+   | IID  | PID  | MID  | Gender |
+   |------|------|------|--------|
+   | SS1  | SS2  | SS3  | .      |
+   | SB1  | SB2  | SB3  | .      |
+
+   - **IID**: Proband or child sample ID where de novo mutations are to be detected.  
+   - **PID**: Father’s sample ID.  
+   - **MID**: Mother’s sample ID.  
+
+   **Note**: Ensure `IID`, `PID`, and `MID` match the sample IDs in your VCF files.
+
 *this process can be run on HPC, with just easy commands:
 Commands:
