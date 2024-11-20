@@ -4,7 +4,7 @@ This guide provides an easy way to detect de novo mutations using scripts. De no
 
 ## Prerequisites
 
-You need VCF files with the following required columns:
+You need VCF files with the following required fields:
 
 - **GQ** (Genotype Quality)  
 - **AD** (Allele Depth)  
@@ -16,6 +16,7 @@ You need VCF files with the following required columns:
 - **POS** (Position)  
 - **REF** (Reference Allele)  
 - **ALT** (Alternate Allele)  
+- ,.etc
 
 ## Sample Details File
 
