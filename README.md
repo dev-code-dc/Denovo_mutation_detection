@@ -68,6 +68,6 @@ This process can be run on an HPC system using simple commands.
 /gpfs/data/../../../../Samples_SNV_chr8_v2-0.vcf.gz
 /gpfs/data/../../../../Samples_SNV_chr9_v2-0.vcf.gz
 
-- **`-ped_xl`**: the ped excel file, mentioned above the samples format
+- **`-ped_xl`**: the ped excel file, mentioned above in the samples format
 
 
