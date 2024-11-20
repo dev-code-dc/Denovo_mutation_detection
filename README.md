@@ -58,7 +58,7 @@ This process can be run on an HPC system using simple commands.
   This option defines how many parallel jobs will run per node. Adjust this number according to the available resources (memory, disk space). Running too many parallel jobs on limited resources can cause failures or slow performance.
 
 - **`-vcf_list`**: thsi should be the full path of your vcf files segregated by chromosomes:
-
+|-|
 |/gpfs/data/user/bratati/common_resources/Final-MAC3_OverlapVariants_CBR-NIBMG/SNV/9772Samples_CBR-NIBMG_SNV_chr8_v2-0.vcf.gz|
 |/gpfs/data/user/bratati/common_resources/Final-MAC3_OverlapVariants_CBR-NIBMG/SNV/9772Samples_CBR-NIBMG_SNV_chr9_v2-0.vcf.gz| 
   
