@@ -51,6 +51,11 @@ chmod +x ./slivar
 wget https://raw.githubusercontent.com/brentp/slivar/master/js/slivar-functions.js
 ```
 
+make sure you have all the required files in your directory:
+
+alright!! you can then execute the command:
+
+
 ```bash
 ./submit_script.sh -ns node55,node56,node57 -pt cbr_q_t -pj 4 -vcf_list SNVs_list.txt -ped_xl Trio_List.xlsx
 
