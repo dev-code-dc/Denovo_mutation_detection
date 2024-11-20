@@ -58,7 +58,7 @@ then :
 chmod a+x *.sh
 ```
 
-alright!! you can then execute the command:
+alright!! you can then execute the command, example:
 
 
 ```bash
