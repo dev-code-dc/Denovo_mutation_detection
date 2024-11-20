@@ -74,6 +74,8 @@ alright!! you can then execute the command:
   
   This option defines how many parallel jobs will run per node. Adjust this number according to the available resources (memory, disk space). Running too many parallel jobs on limited resources can cause failures or slow performance.
 
+If your intermediate processed VCF files are 50 GB each and you have 200 GB of total storage, it's better to use a single node with parallel jobs limited to 2. This way, you ensure that the total storage used by the two parallel jobs (50 GB + 50 GB = 100 GB) will fit into the available disk space, leaving 100 GB of storage for processing intermediate steps or other data.
+
 - **`-vcf_list`**: this should be the full path of your vcf files segregated by chromosomes:
 
 /gpfs/data/../../../../Samples_SNV_chr8_v2-0.vcf.gz
