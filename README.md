@@ -46,22 +46,12 @@ This process can be run on an HPC system using simple commands.
 
 - **`-ns`**: Provide the list of nodes separated by commas (e.g., `node1,node2,node3`).
 
-    ```text
-    This specifies the list of nodes that will be used for the job execution. 
-    You can list multiple nodes separated by commas.
-    ```
+    This specifies the list of nodes that will be used for the job execution. You can list multiple nodes separated by commas.
 
 - **`-pt`**: Specify the partition name for job submission in the HPC (e.g., `cbr_q_t`).
 
-    ```text
-    This indicates the partition in which the job should run on the HPC system. 
-    Each partition is associated with different resource allocations.
-    ```
+    This indicates the partition in which the job should run on the HPC system. Each partition is associated with different resource allocations.
 
 - **`-pj`**: Set the number of parallel jobs per node. Be mindful of available memory and storage.
 
-    ```text
-    This option defines how many parallel jobs will run per node. 
-    Adjust this number according to the available resources (memory, disk space). 
-    Running too many parallel jobs on limited resources can cause failures or slow performance.
-    ```
+    This option defines how many parallel jobs will run per node. Adjust this number according to the available resources (memory, disk space). Running too many parallel jobs on limited resources can cause failures or slow performance.
