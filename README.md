@@ -2,7 +2,7 @@
 you can detect denovo mutation in easy way with the scripts.
 variants that are not present in either of your parents, but does exist in the proband(child)
 you need to have, vcf files with required columns like, GQ, AD, DP QUALITY, FILTER, GT, CHR, POS, REF, ALT etc.
-- 2. **Sample Details File**:  
+- **Sample Details File**:  
    Create an Excel file or table with these columns:
 
    | IID  | PID  | MID  | Gender |
