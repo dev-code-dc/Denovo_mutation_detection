@@ -110,4 +110,8 @@ If your intermediate processed VCF files are 50 GB each and you have 200 GB of t
 
 - **`-ped_xl`**: the ped excel file, mentioned above in the samples format
 
+  # Output Files:
+- After successfully completed all the steps, you wil find:
+- Separate folders for different chromosomes and inside them you will find corresponding Denovo mutation vcf in .vcf format and along with the summary file of denovo mutations in a tsv format.
+
 
