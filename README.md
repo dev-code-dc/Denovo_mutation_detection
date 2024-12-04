@@ -6,7 +6,7 @@ This guide provides an easy way to detect de novo mutations using scripts. De no
 
 ## Prerequisites
 - **scripts** take all the scripts in a directory:
-- 1. denovo_tools.sh
+- 1. denovo_tool.sh
   2. ped_extract.R
   3. vcf_format.R
   4. vcf_process.sh
