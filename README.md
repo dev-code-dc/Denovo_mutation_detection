@@ -114,4 +114,7 @@ If your intermediate processed VCF files are 50 GB each and you have 200 GB of t
 - After successfully completed all the steps, you wil find:
 - Separate folders for different chromosomes and inside them you will find corresponding Denovo mutation vcf in .vcf format and along with the summary file of denovo mutations in a tsv format.
 
+# Additional Steps:
+- You can then use the Annotation tools separately like VEP, or SnpEff or other annotation tools to annotate the variants to get consiquences and to dig more about your variants.
+- you can also apply further Allele Frequency Filter comparing to gnomAD or your population cohort AF <= 0.05
 
