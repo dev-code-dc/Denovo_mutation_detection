@@ -10,6 +10,8 @@ This guide provides an easy way to detect de novo mutations using scripts. De no
   2. ped_extract.R
   3. vcf_format.R
   4. vcf_process.sh
+  5. Slivar
+  6. slivar-functions.js
  
      
 You need VCF files with the following required fields:
