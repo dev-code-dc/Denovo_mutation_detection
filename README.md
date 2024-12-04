@@ -69,8 +69,19 @@ chmod a+x *.sh
 ```
 
 alright!! you can then execute the command, example:
+To get quick help:
+```bash
+./submit_script_v.sh --help
+```
+Usage: ./submit_script_v.sh -ns <node_list> -pt <partition_name> -pj <parallel_jobs> -vcf_list <vcf_list_file> -ped_xl <ped_file>
 
+  -ns         Comma-separated list of nodes (e.g., node55,node56,node57)
+  -pt         Partition name (e.g., cbr_q_t)
+  -pj         Number of parallel jobs per node (e.g., 4)
+  -vcf_list   Path to the VCF list file
+  -ped_xl     Path to the PED file (e.g., Trio_List.xlsx)
 
+# Example:
 ```bash
 ./denovo_tool.sh -ns node55,node56,node57 -pt partition_q_t -pj 4 -vcf_list SNVs_list.txt -ped_xl Trio_List.xlsx
 
