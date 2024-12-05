@@ -118,3 +118,5 @@ If your intermediate processed VCF files are 50 GB each and you have 200 GB of t
 - You can then use the Annotation tools separately like VEP, or SnpEff or other annotation tools to annotate the variants to get consiquences and to dig more about your variants.
 - you can also apply further Allele Frequency Filter comparing to gnomAD or your population cohort AF <= 0.05
 
+# reference:
+- https://www.nature.com/articles/s41525-021-00227-3
