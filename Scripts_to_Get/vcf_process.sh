@@ -31,7 +31,7 @@ process_vcf() {
     formatted_vcf="formatted_${vcf_name%.gz}"
 
     module load bcftools-1.18
-    bcftools view ${vcf} -s ${samples} --threads 64 | head -10000 > "sampls_${formatted_vcf}"
+    bcftools view ${vcf} -s ${samples} --threads 64 > "sampls_${formatted_vcf}"
 
     Rscript vcf_format.R "$formatted_output" "sampls_${formatted_vcf}"
     bcftools view --threads 64 "formatted_sampls_${formatted_vcf}" > "conv_${formatted_vcf}"
