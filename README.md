@@ -53,12 +53,12 @@ first you should get all scripts in your directory, to get those:
 wget https://github.com/brentp/slivar/releases/download/v0.2.8/slivar
 chmod a+x ./slivar
 wget https://raw.githubusercontent.com/brentp/slivar/master/js/slivar-functions.js
-wget https://github.com/dev-code-dc/Denovo_mutation_detection/tree/main/Scripts_to_Get/denovo_tool.sh
+wget https://raw.githubusercontent.com/dev-code-dc/Denovo_mutation_detection/main/Scripts_to_Get/denovo_tool.sh
 chmod a+x denovo_tool.sh
-wget https://github.com/dev-code-dc/Denovo_mutation_detection/tree/main/Scripts_to_Get/ped_extract.R
-wget https://github.com/dev-code-dc/Denovo_mutation_detection/tree/main/Scripts_to_Get/vcf_format.R
-wget https://github.com/dev-code-dc/Denovo_mutation_detection/tree/main/Scripts_to_Get/vcf_process.sh
-chmod a+x vcf_process.sh
+wget https://raw.githubusercontent.com/dev-code-dc/Denovo_mutation_detection/main/Scripts_to_Get/ped_extract.R
+wget https://raw.githubusercontent.com/dev-code-dc/Denovo_mutation_detection/main/Scripts_to_Get/vcf_format.R
+wget https://raw.githubusercontent.com/dev-code-dc/Denovo_mutation_detection/main/Scripts_to_Get/vcf_process.sh
+
 ```
 
 make sure you have all the required files and scripts in your directory.
